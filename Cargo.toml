@@ -8,3 +8,5 @@ target = "wasm32-wasi"
 rustflags = ["--cfg", "wasmedge", "--cfg", "tokio_unstable"]
 
 [dependencies]
+getrandom = "0.2.15"
+rand = "0.8.5"
