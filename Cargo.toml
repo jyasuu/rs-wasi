@@ -1,0 +1,10 @@
+[package]
+name = "rs-wasi"
+version = "0.1.0"
+edition = "2021"
+
+[build]
+target = "wasm32-wasi"
+rustflags = ["--cfg", "wasmedge", "--cfg", "tokio_unstable"]
+
+[dependencies]
